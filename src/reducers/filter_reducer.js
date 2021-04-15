@@ -14,9 +14,9 @@ const filter_reducer = (state, action) => {
     let maxPrice = action.payload
       .map((product) => product.price)
       .sort((a, b) => b - a)[0]
-    let minPrice = action.payload
-      .map((product) => product.price)
-      .sort((a, b) => a - b)[0]
+    // let minPrice = action.payload
+    //   .map((product) => product.price)
+    //   .sort((a, b) => a - b)[0]
 
     return {
       ...state,
@@ -115,7 +115,7 @@ const filter_reducer = (state, action) => {
       },
     }
   }
-  return state
+
   throw new Error(`No Matching "${action.type}" - action type`)
 }
 

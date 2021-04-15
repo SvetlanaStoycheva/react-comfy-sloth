@@ -6,6 +6,7 @@ import Checkout from './CheckoutPage'
 import Error from './ErrorPage'
 import Products from './ProductsPage'
 import SingleProduct from './SingleProductPage'
+import AuthWrapper from './AuthWrapper'
 
 export {
   Home,
@@ -16,4 +17,5 @@ export {
   Error,
   Products,
   SingleProduct,
+  AuthWrapper,
 }
